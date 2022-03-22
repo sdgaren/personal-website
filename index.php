@@ -375,7 +375,22 @@ switch ($season) {
 			<div class="textboxsamplework">
 				<p class="employer"><a href="https://public.tableau.com/app/profile/samuel.garen/viz/ProductSalesDashboard_16465010297070/ProductSalesDashboard">Product Sales Dashboard</a></p>
 				<p class="locationdaterange"><img class="iconinline" src="icon_tableau.svg" alt="Tableau logo" />Tableau</p>
-				<p>This report provides detailed product sales metrics, enabling easy comparison to forecast, along with other derived metrics such as margin, discount rate, and average sales price. Metrics are displayed at top level for easy consumption, visualized by a number of key product and sales channel attributes, and broken further into the top products contributing to overall sales. Selectors at left allow visualizations to be easily changed among modes to help the user understand where overperformance and underperformance to forecast are coming from and filters allow the user to quickly drill down into key products. Histograms at lower right inform how sales are distributed by price and margin to ensure sales are generated profitably. Product color data is incorporated to assist in identifying trends.</p>
+				<p>This report provides detailed product sales metrics, enabling easy comparison to forecast, along with other derived metrics such as margin, discount rate, and average sales price. Metrics are displayed at top level for easy consumption, visualized by a number of key product and sales channel attributes, and broken further into the top products contributing to overall sales. Selectors at left allow visualizations to be easily changed among modes to help the user understand where over&shy;performance and under&shy;performance to forecast are coming from and filters allow the user to quickly drill down into key products. Histograms at lower right inform how sales are distributed by price and margin to ensure sales are generated profitably. Product color data is incorporated to assist in identifying trends.</p>
+			</div>
+			
+			<div class="spacer"></div>
+
+			<a href="https://github.com/sdgaren/personal-website">
+				<?php
+				echo '<div class="sampleworkimage" id="thiswebsite" style=\'background-color: rgba('.$seasonColorString.')\'>';
+				echo '<img src="samplework_website.svg" alt="Screenshot of this website" style="width: 100%;" />';
+				echo '</div>';
+				?>
+			</a>
+			<div class="textboxsamplework">
+				<p class="employer"><a href="https://github.com/sdgaren/personal-website">Source Code for This Website</a></p>
+				<p class="locationdaterange"><img class="iconinline" src="icon_html.svg" alt="HTML icon" />HTML / PHP</p>
+				<p>This Github repository contains the source code for this website, allowing review of the embedded PHP. The PHP within this page sets a seasonally-appropriate background color (with geolocation from IP to set seasonal colors appropriately for users in both the northern and southern hemispheres), dynamically generates date ranges and durations shown next to job titles above, and other minor (silly) trickery. I used construction of this portfolio site as an excuse to learn a bit more PHP, such as working with geodata and dynamic manipulation of SVGs.</p>
 			</div>
 			
 			<div class="spacer" id="awards"></div>
