@@ -34,15 +34,13 @@
 
 body {
 	margin: 0;
-	background-size: 256px;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-image: url('background.svg');
-	background-color: rgba(10, 30, 60, 1);
+	background-size: cover;
+	background-image: url('bg.jpg');
+	background-color: rgba(45, 90, 130, 1);
 }
-
-
 
 /*Text Styles*/
 
@@ -175,6 +173,14 @@ ul {
 	margin: 0 16px 32px 16px;
 }
 
+.blur {
+	backdrop-filter: blur(16px) saturate(110%);
+	-webkit-backdrop-filter: blur(16px) saturate(110%);
+	height: 100%;
+	margin: 0;
+	border: 1px solid rgba(0,0,0,0);
+}
+
 .columns {
 	column-width: 250px;
 	column-gap: 64px;
@@ -237,9 +243,10 @@ ul {
 /*Image Styles*/
 
 .awardimage {
-	width: 75%;
-	max-width: 225px;
-	margin: 0 auto;
+	width: calc(var(--iconsize) * 1.618);
+	height: calc(var(--iconsize) * 1.618);
+	float: left;
+	margin: 0 0 24px 0;
 }
 
 .buttoncontact {
@@ -268,10 +275,12 @@ ul {
 
 .sampleworkimage {
 	width: calc(var(--iconsize) * 1.618);
-	height: var(--iconsize);
+	height: calc(var(--iconsize) * 1.618);
 	float: left;
 	margin: 6px 0 24px 0;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow:
+		0 2px 5px rgba(0, 0, 0, 0.15)
+	;
 }
 
 .selfie {
@@ -284,11 +293,11 @@ ul {
 }
 
 #thiswebsite {
-	background-image: url('background.svg');
-	background-size: 16px;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	background-size: cover;
+	background-image: url('bg.jpg');
+	background-color: rgba(45, 90, 130, 1);
 }
 
 
